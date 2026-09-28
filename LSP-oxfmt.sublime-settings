@@ -1,9 +1,9 @@
 {
 	"settings": {
 		// Path to an oxfmt configuration file
-		"oxc.fmt.configPath": null,
-		// Disable searching for nested configuration files. When set to true, only the configuration file specified in `oxc.fmt.configPath` (if any) will be used.
-		"oxc.fmt.disableNestedConfig": false,
+		"fmt.configPath": null,
+		// Disable searching for nested configuration files. When set to true, only the configuration file specified in `fmt.configPath` (if any) will be used.
+		"fmt.disableNestedConfig": false,
 	},
 	"selector": "source.js | source.ts | source.jsx | source.tsx | source.js.jsx | source.js.react | source.ts.react | source.json | source.json5 | source.css | source.scss | source.less | source.graphql | text.html.basic | text.html.handlebars | text.html.ngx | text.html.vue | text.html.svelte | text.html.markdown | text.mjml | source.yaml | source.toml",
 	// The path to the oxfmt binary used to start the language server.

@@ -14,6 +14,14 @@
         },
         {
             "type": "jq",
+            "options": "with_entries(.key |= ltrimstr(\"oxc.\"))"
+        },
+        {
+            "type": "jq",
+            "options": "walk(if type == \"string\" then gsub(\"`oxc\\\\.fmt\\\\.\"; \"`fmt.\") else . end)"
+        },
+        {
+            "type": "jq",
             "options": "walk(if type == \"object\" then del(.scope, .order, .keywords) else . end)"
         },
         {

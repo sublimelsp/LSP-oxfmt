@@ -22,7 +22,7 @@ If the project has no oxfmt dependency and `server_path` is `auto`, the package 
 
 Open the configuration file with the Command Palette `Preferences: LSP-oxfmt Settings` command or from the Sublime menu.
 
-The settings use the same `oxc.fmt.*` keys as the [VSCode extension](https://github.com/oxc-project/oxc-vscode).
+The settings use the option keys of the [oxc language server](https://github.com/oxc-project/oxc/tree/main/crates/oxc_language_server#workspace-options).
 
 Formatting options are configured in the `.oxfmtrc.json` file of the project. Refer to [Configuring oxfmt](https://oxc.rs/docs/guide/usage/formatter/config).
 
