@@ -1,0 +1,21 @@
+{
+	"settings": {
+		// Path to an oxfmt configuration file
+		"fmt.configPath": null,
+		// Disable searching for nested configuration files. When set to true, only the configuration file specified in `fmt.configPath` (if any) will be used.
+		"fmt.disableNestedConfig": false,
+	},
+	"selector": "source.js | source.ts | source.jsx | source.tsx | source.js.jsx | source.js.react | source.ts.react | source.json | source.json5 | source.css | source.scss | source.less | source.graphql | text.html.basic | text.html.handlebars | text.html.ngx | text.html.vue | text.html.svelte | text.html.markdown | text.mjml | source.yaml | source.toml",
+	// The path to the oxfmt binary used to start the language server.
+	// Use `auto` to use the project's `node_modules/oxfmt` if present and otherwise the version managed by
+	// this package.
+	// If the path is relative, the workspace folder will be used as base path.
+	// NOTE: Change this instead of directly updating `command` - the `${server_path}` variable is dynamically resolved
+	// based on this setting.
+	"server_path": "auto",
+	"command": [
+		"${node_bin}",
+		"${server_path}",
+		"--lsp"
+	]
+}
