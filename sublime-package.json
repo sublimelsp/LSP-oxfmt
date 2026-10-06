@@ -20,7 +20,7 @@
                         "null"
                       ],
                       "default": null,
-                      "markdownDescription": "Path to an oxfmt configuration file"
+                      "markdownDescription": "Optional path to an Oxfmt configuration file. When unset (`null`), Oxfmt automatically discovers configuration files. Set this to use a specific file; doing so disables nested configuration."
                     },
                     "fmt.disableNestedConfig": {
                       "type": "boolean",

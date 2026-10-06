@@ -18,7 +18,7 @@
         },
         {
             "type": "jq",
-            "options": "walk(if type == \"string\" then gsub(\"`oxc\\\\.fmt\\\\.\"; \"`fmt.\") else . end)"
+            "options": "walk(if type == \"string\" then gsub(\"`oxc\\\\.fmt\\\\.\"; \"`fmt.\") | gsub(\" ?Supports \\\\[variables\\\\]\\\\(#variables\\\\)\\\\.\"; \"\") else . end)"
         },
         {
             "type": "jq",
