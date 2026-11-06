@@ -3,5 +3,17 @@
   "extends": [
     "github>sublimelsp/renovate-preset",
     "github>sublimelsp/renovate-preset:automerge-server"
+  ],
+  "packageRules": [
+    {
+      "description": "Automerge minor updates of the 0.x server too, which the automerge-server preset leaves out",
+      "matchPackageNames": [
+        "oxfmt"
+      ],
+      "matchUpdateTypes": [
+        "minor"
+      ],
+      "automerge": true
+    }
   ]
 }
